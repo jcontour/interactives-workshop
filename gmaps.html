@@ -32,12 +32,12 @@
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: {lat: -28, lng: 137}
+    zoom: 15,
+    center: {lat: 40.72, lng: -73.99}
   });
 
   // Load GeoJSON.
-  map.data.loadGeoJson('https://storage.googleapis.com/maps-devrel/google.json');
+  map.data.loadGeoJson('http://jcontour.github.io/interactives-workshop/pluto.geojson');
 
   // Add some style.
   map.data.setStyle(function(feature) {
@@ -51,7 +51,7 @@ function initMap() {
   // Set mouseover event for each feature.
   map.data.addListener('mouseover', function(event) {
     document.getElementById('info-box').textContent =
-        event.feature.getProperty('letter');
+        event.feature.getProperty('yearbuilt');
   });
   // [END snippet]
 }
