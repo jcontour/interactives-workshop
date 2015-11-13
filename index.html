@@ -4,17 +4,34 @@
 	<title>Interactives Map Tutorial</title>
 	<style>
 
-		h1{
-			color: red;
+		p{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 20px;
+			font-family: monospace;
+			padding: 0;
+			padding-top: 2px;
+			margin: 0;
+			text-align: center;
+		}
+
+		iframe{
+			position: fixed;
+			top: 20px;
+			left: 0;
+			width: 100%;
+			height: calc(100% - 20px);
 		}
 
 	</style>
 </head>
 <body>
 
-	<h1>this is a map!</h1>
+	<p>soho buildings by year constructed</p>
 
-	<iframe width="100%" height="520" frameborder="0" src="https://contj186.cartodb.com/viz/19da571c-89aa-11e5-95c7-0ef24382571b/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<iframe width="100%" height="100%" frameborder="0" src="https://contj186.cartodb.com/viz/19da571c-89aa-11e5-95c7-0ef24382571b/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 </body>
 </html>
